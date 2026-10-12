@@ -197,31 +197,9 @@ Inference may automatically populate `eval_planner.txt` with the generated outpu
 
 ### Configuring the Evaluation Classes
 
-**The class-selection configuration used during evaluation must match the configuration used to train the model.**
+The class-selection configuration used during evaluation must match the configuration used to train the model.
 
-In `tests/evaluation.py`, find the class-selection block containing assignments of the form:
-
-```python
-k[k == X] = Y
-```
-
-These assignments determine which class labels are retained during evaluation:
-
-- Set the selected classes' labels to their original class IDs.
-- Set the excluded classes' labels to `0`.
-
-For example, the following configuration retains classes `1` and `5` while excluding the other listed classes:
-
-```python
-k[k == 1] = 1
-k[k == 2] = 0
-k[k == 3] = 0
-k[k == 4] = 0
-k[k == 5] = 5
-k[k == 6] = 0
-k[k == 7] = 0
-k[k == 8] = 0
-```
+In `tests/evaluation.py`, find the class-selection block and select which class labels are retained during evaluation.
 
 **Do not evaluate models trained with different class selections together under one shared evaluation configuration.**
 
