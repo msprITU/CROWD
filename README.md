@@ -1,4 +1,4 @@
-# CROWD: Multi-class Crowd Localization for Object Detection in Aerial Images
+# Multi-class Crowd Localization for Object Detection in Aerial Images
 
 ## Overview
 
