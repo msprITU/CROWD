@@ -234,7 +234,7 @@ The reports contain the metrics calculated by the evaluation script.
 
 This project builds on the CLTR framework:
 
-- **CLTR:** [Counting with Transformer](https://github.com/dk-liang/CLTR)
+- **CLTR:** [Crowd Localization TRansformer](https://github.com/dk-liang/CLTR)
 
 Please refer to the original repository for details of the underlying framework and its implementation.
 
